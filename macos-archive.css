@@ -1,0 +1,34 @@
+/* English uses regular Helvetica/Arial; Chinese keeps its existing hierarchy. */
+:root{--latin-font:Helvetica,Arial,sans-serif}
+body,body *{font-family:Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif!important}
+.latin-run{font-family:var(--latin-font)!important;font-weight:400!important;font-style:normal!important;-webkit-text-stroke:0!important;font-synthesis:none!important}
+.hero-title h1{font-family:var(--latin-font)!important;font-weight:400!important;letter-spacing:-.055em!important;font-style:normal!important;text-shadow:none!important}
+.hero-letter{font-family:var(--latin-font)!important;font-weight:400!important;-webkit-text-stroke:0!important}
+.journey-exp-intro h2,.ph-intro h2,.ph-intro h2 span{font-family:var(--latin-font)!important;font-weight:400!important}
+.atlas-archive .archive-room{grid-template-columns:minmax(220px,.8fr) minmax(0,1.4fr);gap:5%;max-width:1500px}
+.atlas-archive .archive-desk{min-width:0;top:100px;padding-top:12px}
+.atlas-archive .mac-file{background:#fff;transform:none;box-shadow:0 16px 36px #28334119,0 3px 8px #2833410a;border:1px solid #c9cdd2;border-radius:13px;padding:0;min-height:0;overflow:hidden;color:#202329}
+.mac-titlebar{height:45px;background:linear-gradient(#f1f2f4,#e4e6e9);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 18px;position:relative}
+.mac-lights{display:flex;align-items:center;gap:9px;position:relative;z-index:1;min-width:68px}
+.mac-close,.mac-light{width:13px;height:13px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;border:1px solid #d94b40;background:#ff6057}
+.mac-close.file-return{min-height:0;padding:0;font-size:12px;line-height:1;text-decoration:none;color:#781b14;letter-spacing:0;position:relative}
+.mac-close:before{content:'';position:absolute;inset:-12px;border-radius:50%}
+.mac-close>span{font-family:Arial,sans-serif!important;font-weight:400!important;line-height:1;transform:translateY(-.4px)}
+.mac-close:hover{background:#ff483e;box-shadow:0 0 0 4px #ff60571e}.mac-close:focus-visible{outline:2px solid #1754ff;outline-offset:5px}
+.mac-yellow{background:#ffbd2e;border-color:#e4a622}.mac-green{background:#28c840;border-color:#21ac34}
+.mac-window-title{font-size:11px;letter-spacing:1px;color:#6e7580;position:absolute;left:105px;right:105px;text-align:center;font-weight:400;white-space:nowrap}.mac-titlebar-spacer{width:68px}
+.mac-file-body{padding:27px 30px 25px}
+.mac-file .file-card-top{border:0;padding:0 0 26px;font-size:11px;letter-spacing:.8px;color:#343a42}
+.mac-file .file-identity{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:12px;padding:0 0 22px;min-height:220px;align-items:center}
+.mac-file .file-identity .small-label{font-size:11px;letter-spacing:0;color:#24272b;line-height:1.5}
+.mac-file .file-identity h3{font-size:clamp(25px,2.7vw,42px);line-height:1.12;letter-spacing:-1.4px;margin:16px 0 14px;font-weight:700}
+.file-chinese-title{display:block;white-space:nowrap}.file-pupu-title{display:table;font-weight:400!important;font-size:1.36em;line-height:1.02;letter-spacing:-2px;margin-top:5px;background:linear-gradient(transparent 32%,#baf9fa 32%,#baf9fa 94%,transparent 94%);padding-right:8px}
+.mac-file .file-identity p{font-size:13px;color:#3a4047;line-height:1.7;margin:12px 0 0}.mac-file .file-identity img{height:220px;width:100%;object-fit:contain}
+.mac-file .file-tags{gap:9px;margin:0 0 21px}.mac-file .file-tags>span{font-size:11px;font-weight:400;transform:none;background:#eff0f2;border-radius:30px;padding:8px 13px;color:#373e47}
+.mac-file .file-copy{font-size:15px;color:#343b44;line-height:1.9;margin:0 0 28px}
+.mac-file .file-observation{border:0;padding:0}.mac-file .file-observation>span{font-size:11px;font-weight:400;letter-spacing:.3px;color:#3f4650}.mac-file .file-observation p{font-size:13px;line-height:1.85;color:#3e4650;margin:13px 0 26px}
+.mac-file .file-card-bottom{font-size:10px;color:#858b93;line-height:1.7;align-items:end;gap:18px}.mac-file .file-next{border-radius:7px;background:#1d1e20;color:#fff;min-height:42px;font-size:12px;font-weight:400;padding:11px 17px;box-shadow:0 2px 4px #0001}.mac-file .file-next:hover{background:#35383d}
+@media(min-width:1500px){.mac-file-body{padding:35px 40px 30px}.mac-file .file-identity img{height:270px}.mac-file .file-identity{min-height:270px}.mac-file .file-copy{font-size:16px}}
+@media(max-width:1100px) and (min-width:801px){.atlas-archive .archive-room{grid-template-columns:minmax(200px,.7fr) minmax(0,1.4fr);gap:4%}.folder-tab{font-size:12px}.folder-front-title{font-size:18px}.folder-front-title small{font-size:9px}.mac-file-body{padding:24px}.mac-file .file-identity h3{font-size:27px}.mac-file .file-identity img{height:180px}.mac-file .file-identity{min-height:185px}.mac-file .file-copy{font-size:14px}}
+@media(max-width:800px){.atlas-archive .archive-room{grid-template-columns:1fr;gap:20px}.atlas-archive .archive-desk{top:auto}.mac-file-body{padding:26px}.mac-file .file-identity h3{font-size:35px}.mac-file .file-identity img{height:215px}.mac-file .file-copy{font-size:15px}}
+@media(max-width:540px){.mac-titlebar{height:42px;padding:0 15px}.mac-lights{gap:8px}.mac-window-title{font-size:10px;left:90px;right:25px}.mac-file-body{padding:24px 20px}.mac-file .file-card-top{font-size:10px;padding-bottom:26px}.mac-file .file-identity{grid-template-columns:1.05fr 1fr;gap:5px;min-height:165px;padding-bottom:24px}.mac-file .file-identity h3{font-size:29px;letter-spacing:-1px;margin:13px 0}.file-pupu-title{font-size:1.35em;letter-spacing:-1.5px;padding-right:3px}.mac-file .file-identity img{height:175px}.mac-file .file-identity .small-label{font-size:9px;line-height:1.5;display:block}.mac-file .file-identity p{font-size:11px;line-height:1.75}.mac-file .file-tags>span{font-size:10px;padding:8px 11px}.mac-file .file-tags{gap:7px;margin-bottom:19px}.mac-file .file-copy{font-size:14px;line-height:1.9;margin-bottom:25px}.mac-file .file-observation>span{font-size:10px}.mac-file .file-observation p{font-size:12px;margin-bottom:25px}.mac-file .file-card-bottom{font-size:9px;gap:12px}.mac-file .file-next{font-size:11px;padding:10px 14px}}

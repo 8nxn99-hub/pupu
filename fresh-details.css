@@ -1,0 +1,31 @@
+/* Upright paper-roll labels: the cylinder axis follows the width of the sheet. */
+.hero-title .toilet-label{width:275px;height:83px;margin-left:48px;transform:rotate(5deg)}
+.toilet-label img,.toilet-note img{object-fit:contain!important;object-position:center}
+.hero-title .toilet-label>span{inset:12% 5% 12% 25%;font-size:25px}
+.hero-title .toilet-note{width:350px;height:100px;margin:22px 0 0 -3px}
+.toilet-note>span{inset:11% 5% 11% 25%;font-size:15px;line-height:1.6}
+/* A larger, brighter stationery stack with small layered labels. */
+.atlas-archive .archive-room{grid-template-columns:minmax(0,1fr) minmax(0,1.04fr);gap:5%;max-width:1550px}
+.atlas-archive .folder-column{padding:8px 0 0;max-width:none}
+.folder-stack{height:calc(480px + 28vw);min-height:760px;max-height:980px}
+.archive-folder{top:calc(var(--folder-i)*74px);aspect-ratio:1.54;overflow:visible}
+.archive-folder .folder-material{filter:hue-rotate(var(--fresh-hue)) saturate(1.15) brightness(1.035) drop-shadow(0 -3px 7px #182b3b16);pointer-events:none}
+.archive-folder:nth-child(even) .folder-material{transform:scaleX(-1)}
+.folder-tab{top:4.3%;left:7%;width:36%;gap:12px;font-size:clamp(15px,1.4vw,21px);font-weight:600;z-index:4;pointer-events:none}
+.archive-folder:nth-child(even) .folder-tab{left:auto;right:7%;justify-content:flex-end}
+.folder-tab small{font-size:11px}
+.folder-front-title{font-size:clamp(22px,2.2vw,34px);top:41%;left:8%;color:#193a3e;font-weight:400;pointer-events:none}
+.folder-front-title small{font-size:11px;letter-spacing:.4px}
+.folder-sticky{position:absolute;top:8.5%;left:58%;padding:8px 12px 10px;background:#fff3a4;color:#36464c;font-size:10px;box-shadow:1px 4px 4px #6c614426;transform:rotate(6deg);z-index:3;pointer-events:none;min-width:75px;text-align:center;white-space:nowrap}
+.archive-folder:nth-child(even) .folder-sticky{left:14%;top:8%;transform:rotate(-8deg);background:#fff9ed}
+.archive-folder:nth-child(3n) .folder-sticky{background:#eff9ff;transform:rotate(-4deg)}
+.folder-paperclip{position:absolute;top:4%;right:11%;width:21px;height:50px;z-index:5;transform:rotate(15deg);filter:drop-shadow(1px 2px 1px #3c575733);pointer-events:none}
+.archive-folder:nth-child(even) .folder-paperclip{left:17%;right:auto;top:4%;transform:rotate(-11deg)}
+.archive-folder:hover{transform:translateY(-9px) rotate(-.5deg)}
+.archive-folder.is-selected{transform:translateX(-6px)}
+.archive-stack-note{margin-top:18px}.atlas-archive .archive-desk{top:100px}
+.route-avatar[data-station="0"],.route-avatar[data-station="1"]{width:clamp(110px,13vw,185px);max-height:200px;filter:drop-shadow(3px 5px 0 #174e731c)}
+@media(min-width:1700px){.folder-stack{height:960px}.folder-tab{font-size:22px}.folder-sticky{font-size:12px;padding:10px 16px}.folder-paperclip{width:25px;height:60px}}
+@media(max-width:1100px) and (min-width:801px){.atlas-archive .archive-room{grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:4%}.folder-tab{font-size:14px;gap:7px}.folder-front-title{font-size:23px}.folder-sticky{font-size:8px;min-width:55px;padding:6px 7px}.folder-paperclip{width:18px;height:42px}.archive-folder{top:calc(var(--folder-i)*63px)}.folder-stack{height:calc(410px + 27vw);min-height:680px}.mac-file-body{padding:24px}.mac-file .file-identity h3{font-size:27px}}
+@media(max-width:800px){.atlas-archive .archive-room{grid-template-columns:1fr;gap:22px}.atlas-archive .folder-column{max-width:620px;width:100%;margin:auto}.folder-stack{height:calc(440px + 39vw);min-height:0;max-height:890px}.folder-tab{font-size:19px}.folder-sticky{font-size:10px}.archive-folder{top:calc(var(--folder-i)*70px)}.folder-front-title{font-size:29px}.atlas-archive .archive-desk{top:auto}.hero-title .toilet-label{width:240px;height:76px;margin-left:26px}.hero-title .toilet-note{width:310px;height:92px}.route-avatar[data-station="0"],.route-avatar[data-station="1"]{width:140px;max-height:170px}}
+@media(max-width:540px){.hero-title .toilet-label{width:200px;height:61px;margin-left:10px}.hero-title .toilet-label>span{font-size:20px}.hero-title .toilet-note{width:270px;height:82px;position:absolute;top:505px;margin:0}.toilet-note>span{font-size:12px;inset:10% 5% 10% 26%}.atlas-archive .folder-column{padding:0}.archive-folder{top:calc(var(--folder-i)*58px)}.folder-stack{height:calc(340px + 58vw);min-height:555px;max-height:670px}.folder-tab{font-size:14px;gap:8px;width:39%;top:4.5%}.folder-tab small{font-size:10px}.folder-sticky{font-size:8px;min-width:56px;padding:6px 7px;top:10%}.archive-folder:nth-child(even) .folder-sticky{left:12%;top:9%}.folder-paperclip{width:17px;height:39px;right:10%;top:6%}.folder-front-title{font-size:25px}.folder-front-title small{font-size:9px}.route-avatar[data-station="0"],.route-avatar[data-station="1"]{width:94px;max-height:125px}}

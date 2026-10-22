@@ -1,0 +1,33 @@
+/* Focused editorial updates for the five annotated sections. */
+.journey-exp-intro{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.9fr);align-items:center;gap:clamp(26px,4vw,68px);padding-bottom:52px}
+.journey-exp-intro h2{margin:20px 0;max-width:100%;font-size:clamp(32px,4.1vw,64px)}
+.journey-stickers{display:flex;align-items:flex-start;flex-direction:column;gap:22px;padding:24px 0 10px}
+.journey-exp-intro .journey-stickers p{position:relative;background:#ffe65a;padding:22px 26px;margin:0;max-width:440px;font-size:clamp(16px,1.6vw,23px);font-weight:700;line-height:1.75;transform:rotate(2deg);box-shadow:5px 6px 0 #155f8a26}
+.journey-stickers p:before{content:'';position:absolute;width:68px;height:18px;top:-9px;right:24px;background:#fff7cb99;transform:rotate(-9deg)}
+.journey-exp-intro .journey-intro-note{display:inline-flex;align-items:center;gap:16px;background:#ffe65a;padding:13px 18px;font-size:12px;letter-spacing:.5px;line-height:1.7;transform:rotate(-2deg);box-shadow:4px 4px 0 #155f8a26;margin-left:16px}
+.journey-intro-note b{font-size:23px;font-weight:400;line-height:1}
+#atlas .color-memo{margin-top:36px;padding:0 30px 10px;background:#fffaf0;border:1px solid #243e353b;border-top:5px solid #243e35;box-shadow:7px 8px 0 #28453716;position:relative}
+#atlas .color-memo:before{content:'';position:absolute;top:-14px;right:8%;width:76px;height:24px;background:#ffe65ad9;transform:rotate(6deg);pointer-events:none}
+#atlas .color-memo summary{padding:27px 0 24px;align-items:center;gap:20px;list-style:none}
+#atlas .color-memo summary::-webkit-details-marker{display:none}
+#atlas .color-memo-title{display:flex;flex-direction:column;gap:12px;transform:none}
+#atlas .color-memo-title small{font-size:11px;letter-spacing:1px;font-weight:400;color:#526558}
+#atlas .color-memo-title strong{display:inline-block;align-self:flex-start;background:#ffe65a;font-size:clamp(24px,2.7vw,38px);line-height:1.4;letter-spacing:-.5px;padding:4px 13px;transform:rotate(-2deg);color:#182f35}
+#atlas .color-memo-toggle{display:flex;align-items:center;justify-content:center;width:42px;height:42px;flex-shrink:0;border:1px solid #28453755;border-radius:50%;font-size:26px;font-weight:400;transition:transform .2s}
+#atlas .color-memo-content{border-top:1px solid #28453726;padding:28px 0 24px;gap:22px 40px}
+#atlas .color-memo-content #color-note{font-size:16px;line-height:1.9}
+#history #paper-history-title.chinese-title{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:clamp(48px,6.4vw,94px);line-height:1.2;font-weight:700;letter-spacing:-.045em;margin-top:0}
+#history #paper-history-title.chinese-title span{font-weight:700}
+#quiz #magic-title.chinese-title{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:clamp(44px,5.9vw,86px);line-height:1.2;font-weight:650;letter-spacing:-.04em;margin-top:0}
+@media(max-width:900px){.journey-exp-intro{grid-template-columns:1fr;gap:12px}.journey-exp-intro h2{justify-self:start;font-size:clamp(30px,5.8vw,48px);margin:18px 0}.journey-stickers{padding:12px 8px 12px 0;gap:20px}.journey-exp-intro .journey-stickers p{max-width:100%;font-size:17px;padding:18px 22px}.journey-copy-break{display:none}.journey-exp-intro .journey-intro-note{margin-left:14px;font-size:11px}.journey-exp-intro{padding-bottom:28px}}
+@media(max-width:600px){#atlas .color-memo{padding:0 18px 6px;margin-top:28px;box-shadow:4px 5px 0 #28453716}#atlas .color-memo summary{padding:24px 0 22px}#atlas .color-memo-title small{font-size:10px;letter-spacing:.5px}#atlas .color-memo-title strong{font-size:25px}#atlas .color-memo-content{gap:20px;padding:22px 0}#atlas .color-memo-content #color-note{font-size:13px}#atlas .color-memo-toggle{width:34px;height:34px;font-size:22px}.journey-exp-intro .journey-stickers p{font-size:14px;padding:17px 19px}.journey-exp-intro .journey-intro-note{font-size:10px;padding:11px 13px;gap:10px;margin-left:6px}#history #paper-history-title.chinese-title{font-size:46px}#quiz #magic-title.chinese-title{font-size:42px}}
+
+/* v24: Chinese leads the journey; chapter titles share one type treatment. */
+.journey-exp-intro h2.journey-chinese-title{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:clamp(32px,3.9vw,58px);font-weight:700;letter-spacing:-.04em;line-height:1.45;padding:22px 28px}
+.journey-exp-intro .journey-stickers p.journey-english-title{font-family:Arial,sans-serif;font-size:clamp(17px,1.8vw,25px);font-weight:400;line-height:1.35;padding:20px 24px;letter-spacing:0}
+.journey-english-title .latin-run{font:inherit}
+#history #paper-history-title.chinese-title span:after{content:none;border:0}
+#quiz #magic-title.chinese-title{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:clamp(48px,6.4vw,94px);font-weight:700;line-height:1.2;letter-spacing:-.045em}
+#quiz #magic-title.chinese-title>span{font-family:inherit;font-weight:inherit}
+@media(max-width:900px){.journey-exp-intro h2.journey-chinese-title{font-size:clamp(30px,5.4vw,46px)}.journey-exp-intro .journey-stickers p.journey-english-title{font-size:20px}.journey-stickers{gap:18px}}
+@media(max-width:600px){.journey-exp-intro h2.journey-chinese-title{font-size:clamp(25px,6.5vw,36px);padding:18px 20px;line-height:1.5}.journey-exp-intro .journey-stickers p.journey-english-title{font-size:17px;padding:16px 20px}#quiz #magic-title.chinese-title{font-size:46px}}
