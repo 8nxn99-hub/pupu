@@ -1,0 +1,11 @@
+/* Approved historical collages sit beneath the original interactive paper. */
+.ph-sheet{width:min(860px,100%);min-height:1080px;padding:34px 44px 270px;background:#f7f5ee;isolation:isolate}
+.ph-sheet:before{opacity:1;background-image:linear-gradient(90deg,rgba(255,254,250,.12),rgba(255,254,250,.08)),var(--ph-story-art);background-size:100% 100%,100% 100%;background-repeat:no-repeat;background-position:center;z-index:0}
+.ph-sheet>*{position:relative;z-index:1}
+.ph-sheet-top,.ph-drag-grip{max-width:100%}
+.ph-sheet .ph-story-meta,.ph-sheet #ph-story-title,.ph-sheet .ph-story-copy,.ph-sheet .ph-joke,.ph-sheet .ph-source,.ph-sheet .ph-footnote{max-width:73%;background:#fffefaeb;box-shadow:0 0 18px 10px #fffefaeb}
+.ph-sheet #ph-story-title{font-size:clamp(29px,3.2vw,40px);line-height:1.35}
+.ph-sheet .ph-story-copy{font-size:16px;line-height:1.95}
+.ph-sheet .ph-joke{padding:8px 0}.ph-sheet .ph-joke p{font-size:17px}.ph-sheet .ph-source{display:inline-block;font-size:11px;overflow-wrap:anywhere}.ph-sheet .ph-footnote{font-size:10px!important}.ph-sheet .ph-sheet-bottom{margin-top:28px;max-width:73%;background:#fffefaeb;box-shadow:0 0 14px 8px #fffefaeb}
+@media(max-width:800px){.ph-sheet{min-height:1000px;padding:28px 30px 230px}.ph-sheet .ph-story-meta,.ph-sheet #ph-story-title,.ph-sheet .ph-story-copy,.ph-sheet .ph-joke,.ph-sheet .ph-source,.ph-sheet .ph-footnote,.ph-sheet .ph-sheet-bottom{max-width:88%}}
+@media(max-width:600px){.ph-sheet{min-height:1040px;padding:26px 24px 235px}.ph-sheet:before{background-size:100% 100%,auto 100%;background-position:center,right bottom}.ph-sheet .ph-story-meta,.ph-sheet #ph-story-title,.ph-sheet .ph-story-copy,.ph-sheet .ph-joke,.ph-sheet .ph-source,.ph-sheet .ph-footnote,.ph-sheet .ph-sheet-bottom{max-width:100%;background:#fffefaf0;box-shadow:0 0 14px 7px #fffefaf0}.ph-sheet .ph-story-copy{font-size:14px;line-height:1.9}.ph-sheet #ph-story-title{font-size:29px}.ph-sheet .ph-joke p{font-size:15px}}
